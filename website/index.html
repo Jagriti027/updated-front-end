@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" t ype="image/x-icon" />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive plants website - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <i class="ri-leaf-line nav__logo-icon "></i> Fund Easy
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Profile</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Will</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="assets/img/home.png" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Fund Easy will make your funding way better
+            </h1>
+            <p class="home__description">
+              Make your will easily and without getting off course. a one-stop
+              shop for all of your investing and finance needs.
+            </p>
+            <a href="#about" class="button button--flex">
+              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          
+          
+        </div>
+      </section>
+
+      <!--================== PROFILE ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img src="assets/img/profile.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <h2 class="section__title about__title">PROFILE</h2>
+
+            <p class="about__description">
+              Name:<br />
+              Total Fund:
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                1st benefeciary <br />
+                Name of benefeciary: <br />
+                age: <br />
+                amount:<br />
+                wallet address:
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                2nd benefeciary <br />
+                Name of benefeciary: <br />
+                age: <br />
+                amount:<br />
+                wallet address:<br />
+                +1
+              </p>
+            </div>
+            <button class="button button--flex">
+              Delete will
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+            <button class="button button--flex2">
+              Withdrawl 
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </div>
+          
+        </div>
+      </section>
+      
+
+      <!--==================== WILL ====================-->
+      <section class="contact" id="contact">
+      <div class="heading">
+        <h3>Creating Will</h3>
+      </div>
+
+      <div class="row">
+        <div class="image">
+          <img src="assets/img/will2.png" alt="" />
+        </div>
+
+        <form action="" method="post">
+          <h3>Create a new will</h3>
+          <input
+            type="number"
+            name="guests"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="no of beneficiaries"
+            min="0"
+            max="99"
+            onkeypress="if(this.value.length == 2) return false"
+          />
+          <input
+            type="text"
+            name="name"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="enter your beneficiary name"
+          />
+          <input
+            type="number"
+            name="guests"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="age of beneficiary"
+            min="0"
+            max="99"
+            onkeypress="if(this.value.length == 2) return false"
+          />
+          <input
+            type="text"
+            name="name"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="Enter beneficiary wallet address"
+          />
+          <input
+            type="text"
+            name="name"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="Enter time span"
+          />
+          <button class="button button--flex">
+              Confirm
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+        </form>
+      </div>
+    </section>
+    
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          
+
+         
+
+        
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact Us</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">+999 888 777</li>
+
+           
+        
+
+      <p class="footer__copy">&#169; Tech Armie. All rigths reserved</p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
